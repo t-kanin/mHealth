@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		8B66F5742561D86200067D7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B66F5732561D86200067D7F /* AppDelegate.swift */; };
 		8B66F5762561D86200067D7F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B66F5752561D86200067D7F /* SceneDelegate.swift */; };
-		8B66F5782561D86200067D7F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B66F5772561D86200067D7F /* ViewController.swift */; };
+		8B66F5782561D86200067D7F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B66F5772561D86200067D7F /* HomeViewController.swift */; };
 		8B66F57B2561D86200067D7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B66F5792561D86200067D7F /* Main.storyboard */; };
 		8B66F57D2561D86600067D7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B66F57C2561D86600067D7F /* Assets.xcassets */; };
 		8B66F5802561D86600067D7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B66F57E2561D86600067D7F /* LaunchScreen.storyboard */; };
+		8B66F5932561DB4A00067D7F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B66F5922561DB4A00067D7F /* LoginViewController.swift */; };
+		8B66F5962561DB6400067D7F /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B66F5952561DB6400067D7F /* RegistrationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8B66F5702561D86200067D7F /* mHealthGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mHealthGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B66F5732561D86200067D7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B66F5752561D86200067D7F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8B66F5772561D86200067D7F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8B66F5772561D86200067D7F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8B66F57A2561D86200067D7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8B66F57C2561D86600067D7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B66F57F2561D86600067D7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B66F5812561D86600067D7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B66F5922561DB4A00067D7F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8B66F5952561DB6400067D7F /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,73 @@
 		8B66F5722561D86200067D7F /* mHealthGame */ = {
 			isa = PBXGroup;
 			children = (
-				8B66F5732561D86200067D7F /* AppDelegate.swift */,
-				8B66F5752561D86200067D7F /* SceneDelegate.swift */,
-				8B66F5772561D86200067D7F /* ViewController.swift */,
-				8B66F5792561D86200067D7F /* Main.storyboard */,
-				8B66F57C2561D86600067D7F /* Assets.xcassets */,
-				8B66F57E2561D86600067D7F /* LaunchScreen.storyboard */,
+				8B66F58C2561D8CE00067D7F /* Resources */,
+				8B66F58B2561D8C500067D7F /* Models */,
+				8B66F58A2561D8BE00067D7F /* Views */,
+				8B66F5892561D8B700067D7F /* Controllers */,
 				8B66F5812561D86600067D7F /* Info.plist */,
 			);
 			path = mHealthGame;
+			sourceTree = "<group>";
+		};
+		8B66F5892561D8B700067D7F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8B66F5902561DAFD00067D7F /* Other */,
+				8B66F5772561D86200067D7F /* HomeViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8B66F58A2561D8BE00067D7F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8B66F57C2561D86600067D7F /* Assets.xcassets */,
+				8B66F58E2561D97A00067D7F /* Storyboards */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8B66F58B2561D8C500067D7F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8B66F58C2561D8CE00067D7F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8B66F5732561D86200067D7F /* AppDelegate.swift */,
+				8B66F5752561D86200067D7F /* SceneDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8B66F58E2561D97A00067D7F /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8B66F5792561D86200067D7F /* Main.storyboard */,
+				8B66F57E2561D86600067D7F /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		8B66F5902561DAFD00067D7F /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				8B66F5912561DB0B00067D7F /* Onboarding */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		8B66F5912561DB0B00067D7F /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				8B66F5922561DB4A00067D7F /* LoginViewController.swift */,
+				8B66F5952561DB6400067D7F /* RegistrationViewController.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +199,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B66F5782561D86200067D7F /* ViewController.swift in Sources */,
+				8B66F5932561DB4A00067D7F /* LoginViewController.swift in Sources */,
+				8B66F5782561D86200067D7F /* HomeViewController.swift in Sources */,
 				8B66F5742561D86200067D7F /* AppDelegate.swift in Sources */,
 				8B66F5762561D86200067D7F /* SceneDelegate.swift in Sources */,
+				8B66F5962561DB6400067D7F /* RegistrationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
