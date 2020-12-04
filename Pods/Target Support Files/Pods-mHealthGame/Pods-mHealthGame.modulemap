@@ -1,0 +1,6 @@
+framework module Pods_mHealthGame {
+  umbrella header "Pods-mHealthGame-umbrella.h"
+
+  export *
+  module * { export * }
+}

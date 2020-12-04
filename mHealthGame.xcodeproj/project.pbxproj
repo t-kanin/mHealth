@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B51CC9A25795F8800A61078 /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B51CC9925795F8800A61078 /* ProgressViewController.swift */; };
+		8B51CCA1257AA7F900A61078 /* SettingViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B51CCA0257AA7F900A61078 /* SettingViewExtension.swift */; };
+		8B51CCA8257AC41700A61078 /* LoginViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B51CCA7257AC41700A61078 /* LoginViewExtension.swift */; };
 		8B66F5742561D86200067D7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B66F5732561D86200067D7F /* AppDelegate.swift */; };
 		8B66F5762561D86200067D7F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B66F5752561D86200067D7F /* SceneDelegate.swift */; };
 		8B66F5782561D86200067D7F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B66F5772561D86200067D7F /* HomeViewController.swift */; };
@@ -15,9 +18,22 @@
 		8B66F5802561D86600067D7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B66F57E2561D86600067D7F /* LaunchScreen.storyboard */; };
 		8B66F5932561DB4A00067D7F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B66F5922561DB4A00067D7F /* LoginViewController.swift */; };
 		8B66F5962561DB6400067D7F /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B66F5952561DB6400067D7F /* RegistrationViewController.swift */; };
+		8B66F59D2565F13700067D7F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8B66F59C2565F13700067D7F /* GoogleService-Info.plist */; };
+		8BB6949A2568307E0057B175 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB694992568307E0057B175 /* DatabaseManager.swift */; };
+		8BB6949D256831420057B175 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB6949C256831420057B175 /* AuthManager.swift */; };
+		8BB694A0256831660057B175 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB6949F256831660057B175 /* StorageManager.swift */; };
+		8BB694B7256C3C1F0057B175 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB694B6256C3C1F0057B175 /* Extension.swift */; };
+		8BB694BB256D54D70057B175 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB694BA256D54D70057B175 /* SettingViewController.swift */; };
+		8BB694C0256D96400057B175 /* ExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB694BF256D96400057B175 /* ExerciseViewController.swift */; };
+		AD0884A7F81EF0F14F848623 /* Pods_mHealthGame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DBDF773429D0FB701298499 /* Pods_mHealthGame.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1DBDF773429D0FB701298499 /* Pods_mHealthGame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mHealthGame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		222989B0A8AC712A2E7F3C87 /* Pods-mHealthGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mHealthGame.debug.xcconfig"; path = "Target Support Files/Pods-mHealthGame/Pods-mHealthGame.debug.xcconfig"; sourceTree = "<group>"; };
+		8B51CC9925795F8800A61078 /* ProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
+		8B51CCA0257AA7F900A61078 /* SettingViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewExtension.swift; sourceTree = "<group>"; };
+		8B51CCA7257AC41700A61078 /* LoginViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewExtension.swift; sourceTree = "<group>"; };
 		8B66F5702561D86200067D7F /* mHealthGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mHealthGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B66F5732561D86200067D7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B66F5752561D86200067D7F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +44,14 @@
 		8B66F5812561D86600067D7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B66F5922561DB4A00067D7F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8B66F5952561DB6400067D7F /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		8B66F59C2565F13700067D7F /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = "GoogleService-Info.plist"; path = "mHealthGame/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		8BB694992568307E0057B175 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		8BB6949C256831420057B175 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		8BB6949F256831660057B175 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		8BB694B6256C3C1F0057B175 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		8BB694BA256D54D70057B175 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		8BB694BF256D96400057B175 /* ExerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseViewController.swift; sourceTree = "<group>"; };
+		A9F0CD0729FC7F4D8A5FDA34 /* Pods-mHealthGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mHealthGame.release.xcconfig"; path = "Target Support Files/Pods-mHealthGame/Pods-mHealthGame.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +59,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD0884A7F81EF0F14F848623 /* Pods_mHealthGame.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A4C2FAACE42BF61EA3788D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DBDF773429D0FB701298499 /* Pods_mHealthGame.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8B51CCA3257ABE9D00A61078 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8BB694B6256C3C1F0057B175 /* Extension.swift */,
+				8B51CCA0257AA7F900A61078 /* SettingViewExtension.swift */,
+				8B51CCA7257AC41700A61078 /* LoginViewExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		8B66F5672561D86200067D7F = {
 			isa = PBXGroup;
 			children = (
 				8B66F5722561D86200067D7F /* mHealthGame */,
 				8B66F5712561D86200067D7F /* Products */,
+				F2B9D1C6EED460D7E0E07541 /* Pods */,
+				7A4C2FAACE42BF61EA3788D7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,8 +117,8 @@
 		8B66F5892561D8B700067D7F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				8B66F5B22565F39E00067D7F /* Core Taps */,
 				8B66F5902561DAFD00067D7F /* Other */,
-				8B66F5772561D86200067D7F /* HomeViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -90,6 +135,9 @@
 		8B66F58B2561D8C500067D7F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				8BB6949C256831420057B175 /* AuthManager.swift */,
+				8BB694992568307E0057B175 /* DatabaseManager.swift */,
+				8BB6949F256831660057B175 /* StorageManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -97,7 +145,9 @@
 		8B66F58C2561D8CE00067D7F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8B51CCA3257ABE9D00A61078 /* Extension */,
 				8B66F5732561D86200067D7F /* AppDelegate.swift */,
+				8B66F59C2565F13700067D7F /* GoogleService-Info.plist */,
 				8B66F5752561D86200067D7F /* SceneDelegate.swift */,
 			);
 			path = Resources;
@@ -115,6 +165,7 @@
 		8B66F5902561DAFD00067D7F /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				8BB6949725682C240057B175 /* General */,
 				8B66F5912561DB0B00067D7F /* Onboarding */,
 			);
 			path = Other;
@@ -129,6 +180,33 @@
 			path = Onboarding;
 			sourceTree = "<group>";
 		};
+		8B66F5B22565F39E00067D7F /* Core Taps */ = {
+			isa = PBXGroup;
+			children = (
+				8BB694BF256D96400057B175 /* ExerciseViewController.swift */,
+				8B66F5772561D86200067D7F /* HomeViewController.swift */,
+				8B51CC9925795F8800A61078 /* ProgressViewController.swift */,
+			);
+			path = "Core Taps";
+			sourceTree = "<group>";
+		};
+		8BB6949725682C240057B175 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				8BB694BA256D54D70057B175 /* SettingViewController.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		F2B9D1C6EED460D7E0E07541 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				222989B0A8AC712A2E7F3C87 /* Pods-mHealthGame.debug.xcconfig */,
+				A9F0CD0729FC7F4D8A5FDA34 /* Pods-mHealthGame.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -136,9 +214,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8B66F5842561D86600067D7F /* Build configuration list for PBXNativeTarget "mHealthGame" */;
 			buildPhases = (
+				509DBAD445F85C3306DA4756 /* [CP] Check Pods Manifest.lock */,
 				8B66F56C2561D86200067D7F /* Sources */,
 				8B66F56D2561D86200067D7F /* Frameworks */,
 				8B66F56E2561D86200067D7F /* Resources */,
+				AEAA9471118F9C77B4992C60 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -187,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B66F5802561D86600067D7F /* LaunchScreen.storyboard in Resources */,
+				8B66F59D2565F13700067D7F /* GoogleService-Info.plist in Resources */,
 				8B66F57D2561D86600067D7F /* Assets.xcassets in Resources */,
 				8B66F57B2561D86200067D7F /* Main.storyboard in Resources */,
 			);
@@ -194,16 +275,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		509DBAD445F85C3306DA4756 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mHealthGame-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AEAA9471118F9C77B4992C60 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mHealthGame/Pods-mHealthGame-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mHealthGame/Pods-mHealthGame-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-mHealthGame/Pods-mHealthGame-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8B66F56C2561D86200067D7F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BB694B7256C3C1F0057B175 /* Extension.swift in Sources */,
 				8B66F5932561DB4A00067D7F /* LoginViewController.swift in Sources */,
+				8B51CCA1257AA7F900A61078 /* SettingViewExtension.swift in Sources */,
+				8BB694C0256D96400057B175 /* ExerciseViewController.swift in Sources */,
+				8B51CC9A25795F8800A61078 /* ProgressViewController.swift in Sources */,
+				8BB6949D256831420057B175 /* AuthManager.swift in Sources */,
 				8B66F5782561D86200067D7F /* HomeViewController.swift in Sources */,
+				8BB6949A2568307E0057B175 /* DatabaseManager.swift in Sources */,
+				8BB694BB256D54D70057B175 /* SettingViewController.swift in Sources */,
 				8B66F5742561D86200067D7F /* AppDelegate.swift in Sources */,
+				8B51CCA8257AC41700A61078 /* LoginViewExtension.swift in Sources */,
 				8B66F5762561D86200067D7F /* SceneDelegate.swift in Sources */,
 				8B66F5962561DB6400067D7F /* RegistrationViewController.swift in Sources */,
+				8BB694A0256831660057B175 /* StorageManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,10 +479,14 @@
 		};
 		8B66F5852561D86600067D7F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 222989B0A8AC712A2E7F3C87 /* Pods-mHealthGame.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4QUWDSYJ8R;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = mHealthGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -359,16 +495,20 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.mHealthGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		8B66F5862561D86600067D7F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9F0CD0729FC7F4D8A5FDA34 /* Pods-mHealthGame.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4QUWDSYJ8R;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = mHealthGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -377,7 +517,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.mHealthGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

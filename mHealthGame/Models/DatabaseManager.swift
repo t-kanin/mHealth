@@ -20,7 +20,7 @@ public class DatabaseManager {
     /// -Parameters
     ///     -completion; Async callback for result if database entry succeded 
     public func insertNewUSer(with email: String, username: String, uid: String, completion: @escaping (Bool) -> Void){
-        database.child("users").child(uid).setValue(["username":username]) { error, _ in
+        database.child("users").child(username).setValue(["uid":uid]) { error, _ in
             if error == nil {
                 completion(true)
                 return

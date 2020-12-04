@@ -4,7 +4,7 @@
 //
 //  Created by kanin tansirisittikul on 15/11/2563 BE.
 //
-
+import Firebase
 import UIKit
 
 @main
@@ -13,7 +13,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        // use Firebase library to configure APIs
+        FirebaseApp.configure()
+        
         return true
     }
 
