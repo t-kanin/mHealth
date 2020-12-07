@@ -41,6 +41,8 @@ class ExerciseViewController: UIViewController{
                 else{
                     self.textField.text = "User activity is unknown"
                 }
+                print(motion as Any)
+                
             }
         }
     }
@@ -48,7 +50,6 @@ class ExerciseViewController: UIViewController{
     func myAccel() {
         motion.accelerometerUpdateInterval = 0.5
         motion.startAccelerometerUpdates(to: OperationQueue.current!) { (data, error) in
-            print(data as Any)
             if let trueData = data {
                 self.view.reloadInputViews()
                 let x = trueData.acceleration.x
