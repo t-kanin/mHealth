@@ -115,7 +115,7 @@ class RegistrationViewController: UIViewController {
         guard let email = email.text, !email.isEmpty,
         let password = password.text, !password.isEmpty, password.count >= 8,
         let username = username.text, !username.isEmpty else {return}
-        AuthManager.shared.regesterNewUser(username: username, email: email, password: password) {
+        AuthManager.shared.registerNewUser(username: username, email: email, password: password) {
             registered in
             DispatchQueue.main.async {
                 if registered {

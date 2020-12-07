@@ -3,4 +3,86 @@
    uuid = "F6441B83-A55C-4BAB-B3A9-F0039D0557A5"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "84977262-E3F0-42AF-8311-D0785DEC4AC6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "mHealthGame/Resources/Extension/SettingViewExtension.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "imagePickerController(_:didFinishPickingMediaWithInfo:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BC28BB19-09A4-4819-8EA5-F31677A84EE6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "mHealthGame/Resources/Extension/SettingViewExtension.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "imagePickerController(_:didFinishPickingMediaWithInfo:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D8B9CDBE-00AC-4AB5-ADA8-62234E1041AD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "mHealthGame/Models/DatabaseManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "getDownloadURL()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D8B9CDBE-00AC-4AB5-ADA8-62234E1041AD - 205b497141d21b15"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "mHealthGame.DatabaseManager.getDownloadURL() -&gt; Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "mHealthGame"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Applications/KU/AppOS/mHealthGame/mHealthGame/Models/DatabaseManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "809">
+               </Location>
+               <Location
+                  uuid = "D8B9CDBE-00AC-4AB5-ADA8-62234E1041AD - eed9c26f6988ce63"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.FIRDataSnapshot) -&gt; () in mHealthGame.DatabaseManager.getDownloadURL() -&gt; Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "mHealthGame"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Applications/KU/AppOS/mHealthGame/mHealthGame/Models/DatabaseManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "145">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

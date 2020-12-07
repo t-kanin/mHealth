@@ -25,6 +25,9 @@
 		8BB694B7256C3C1F0057B175 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB694B6256C3C1F0057B175 /* Extension.swift */; };
 		8BB694BB256D54D70057B175 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB694BA256D54D70057B175 /* SettingViewController.swift */; };
 		8BB694C0256D96400057B175 /* ExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB694BF256D96400057B175 /* ExerciseViewController.swift */; };
+		8BC967FD257C33870017E4E8 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BC967FC257C33870017E4E8 /* Storyboard.storyboard */; };
+		8BC96800257C33E00017E4E8 /* PasswordRecoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC967FF257C33E00017E4E8 /* PasswordRecoverViewController.swift */; };
+		8BC96803257C35500017E4E8 /* PasswordRecoveredExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC96802257C35500017E4E8 /* PasswordRecoveredExtension.swift */; };
 		AD0884A7F81EF0F14F848623 /* Pods_mHealthGame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DBDF773429D0FB701298499 /* Pods_mHealthGame.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +54,9 @@
 		8BB694B6256C3C1F0057B175 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		8BB694BA256D54D70057B175 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		8BB694BF256D96400057B175 /* ExerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseViewController.swift; sourceTree = "<group>"; };
+		8BC967FC257C33870017E4E8 /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		8BC967FF257C33E00017E4E8 /* PasswordRecoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordRecoverViewController.swift; sourceTree = "<group>"; };
+		8BC96802257C35500017E4E8 /* PasswordRecoveredExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordRecoveredExtension.swift; sourceTree = "<group>"; };
 		A9F0CD0729FC7F4D8A5FDA34 /* Pods-mHealthGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mHealthGame.release.xcconfig"; path = "Target Support Files/Pods-mHealthGame/Pods-mHealthGame.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,6 +86,7 @@
 				8BB694B6256C3C1F0057B175 /* Extension.swift */,
 				8B51CCA0257AA7F900A61078 /* SettingViewExtension.swift */,
 				8B51CCA7257AC41700A61078 /* LoginViewExtension.swift */,
+				8BC96802257C35500017E4E8 /* PasswordRecoveredExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -158,6 +165,7 @@
 			children = (
 				8B66F5792561D86200067D7F /* Main.storyboard */,
 				8B66F57E2561D86600067D7F /* LaunchScreen.storyboard */,
+				8BC967FC257C33870017E4E8 /* Storyboard.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -176,6 +184,7 @@
 			children = (
 				8B66F5922561DB4A00067D7F /* LoginViewController.swift */,
 				8B66F5952561DB6400067D7F /* RegistrationViewController.swift */,
+				8BC967FF257C33E00017E4E8 /* PasswordRecoverViewController.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -270,6 +279,7 @@
 				8B66F59D2565F13700067D7F /* GoogleService-Info.plist in Resources */,
 				8B66F57D2561D86600067D7F /* Assets.xcassets in Resources */,
 				8B66F57B2561D86200067D7F /* Main.storyboard in Resources */,
+				8BC967FD257C33870017E4E8 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +336,7 @@
 				8B66F5932561DB4A00067D7F /* LoginViewController.swift in Sources */,
 				8B51CCA1257AA7F900A61078 /* SettingViewExtension.swift in Sources */,
 				8BB694C0256D96400057B175 /* ExerciseViewController.swift in Sources */,
+				8BC96803257C35500017E4E8 /* PasswordRecoveredExtension.swift in Sources */,
 				8B51CC9A25795F8800A61078 /* ProgressViewController.swift in Sources */,
 				8BB6949D256831420057B175 /* AuthManager.swift in Sources */,
 				8B66F5782561D86200067D7F /* HomeViewController.swift in Sources */,
@@ -333,6 +344,7 @@
 				8BB694BB256D54D70057B175 /* SettingViewController.swift in Sources */,
 				8B66F5742561D86200067D7F /* AppDelegate.swift in Sources */,
 				8B51CCA8257AC41700A61078 /* LoginViewExtension.swift in Sources */,
+				8BC96800257C33E00017E4E8 /* PasswordRecoverViewController.swift in Sources */,
 				8B66F5762561D86200067D7F /* SceneDelegate.swift in Sources */,
 				8B66F5962561DB6400067D7F /* RegistrationViewController.swift in Sources */,
 				8BB694A0256831660057B175 /* StorageManager.swift in Sources */,

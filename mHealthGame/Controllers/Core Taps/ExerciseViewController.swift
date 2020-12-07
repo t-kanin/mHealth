@@ -13,12 +13,36 @@ class ExerciseViewController: UIViewController{
     @IBOutlet weak var xAccel: UITextField!
     @IBOutlet weak var yAccel: UITextField!
     @IBOutlet weak var zAccel: UITextField!
+    @IBOutlet weak var headerLabel: UILabel!
+    @IBOutlet weak var textField: UITextField!
     
     var motion = CMMotionManager()
+    var motionActivityManager  = CMMotionActivityManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupHeaderLabel()
+        activityManager()
         myAccel()
+    }
+    
+    func activityManager(){
+        if(CMMotionActivityManager.isActivityAvailable()){ //check if the device authorisation for the motion tracking
+            motionActivityManager.startActivityUpdates(to: OperationQueue.main) { (motion) in
+                if(motion?.stationary == true){
+                    self.textField.text = "User is stationary"
+                }
+                else if(motion?.walking == true){
+                    self.textField.text = "User is walking"
+                }
+                else if(motion?.running == true){
+                    self.textField.text = "User is running"
+                }
+                else{
+                    self.textField.text = "User activity is unknown"
+                }
+            }
+        }
     }
     
     func myAccel() {
@@ -38,6 +62,14 @@ class ExerciseViewController: UIViewController{
             }
         }
     }
+    
+    func setupHeaderLabel (){
+        let title = "User Activity"
+        let attributedText = NSMutableAttributedString(string: title,attributes:
+                            [NSAttributedString.Key.font: UIFont.init(name:"Didot",size: 28)!,NSAttributedString.Key.foregroundColor: UIColor.black])
+        headerLabel.attributedText = attributedText
+    }
+    
 }
 
 extension Double {

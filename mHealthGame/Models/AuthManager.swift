@@ -9,7 +9,7 @@ import FirebaseAuth
 public class AuthManager {
     static let shared = AuthManager()
     // MARK: - PUBLIC
-    public func regesterNewUser(username: String, email: String, password: String, completion: @escaping (Bool) -> Void){
+    public func registerNewUser(username: String, email: String, password: String, completion: @escaping (Bool) -> Void){
         DatabaseManager.shared.canCreatNewUser(with: email, username: username) { canCreate in
             if canCreate{
                 /*create account*/
@@ -45,7 +45,7 @@ public class AuthManager {
         }
     }
     
-    
+
     public func loginUser (username: String?, email: String?, password: String, completion: @escaping(Bool) -> Void){
         if let email = email {
             // email login
@@ -62,5 +62,21 @@ public class AuthManager {
             //TODO: add username login ?
             
         }
+    }
+    
+    public func logout (completion: @escaping(Bool) -> Void){
+        do{
+            try Auth.auth().signOut()
+            completion(true)
+        }
+        catch{
+            print("failed to sign out")
+            completion(false)
+        }
+    }
+    
+    public func getUID()->String?{
+        let userId = Auth.auth().currentUser?.uid
+        return userId
     }
 }

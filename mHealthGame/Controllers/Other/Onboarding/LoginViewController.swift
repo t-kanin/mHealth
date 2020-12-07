@@ -69,6 +69,13 @@ class LoginViewController: UIViewController {
         return button
     }()
     
+    private let recoveryButton: UIButton = {
+        let button = UIButton()
+        let attributedText = NSMutableAttributedString(string: "Forgot Password? ", attributes: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 16), NSAttributedString.Key.foregroundColor: UIColor.black])
+        button.setAttributedTitle(attributedText, for: UIControl.State.normal)
+        return button
+    }()
+    
     private let createAccountButton: UIButton = {
         let button = UIButton()
         
@@ -86,6 +93,7 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         loginButton.addTarget(self, action: #selector(didTapLoginButton), for: .touchUpInside)
         createAccountButton.addTarget(self, action: #selector(didTapCreateAccountButton), for: .touchUpInside)
+        recoveryButton.addTarget(self, action: #selector(didTapRecoveryPasswordButton), for: .touchUpInside)
         usernameEmail.delegate = self
         password.delegate = self
         addSubViews()
@@ -130,6 +138,13 @@ class LoginViewController: UIViewController {
             height: 52.0
         )
         
+        recoveryButton.frame = CGRect(
+            x:25,
+            y:createAccountButton.bot + 210,
+            width: view.width - 50,
+            height: 52.0
+        )
+        
         //configureHeaderView()
     }
     private func configureHeaderView(){
@@ -156,6 +171,7 @@ class LoginViewController: UIViewController {
         view.addSubview(password)
         view.addSubview(loginButton)
         view.addSubview(createAccountButton)
+        view.addSubview(recoveryButton)
     }
     
     @objc private func didTapLoginButton() {
@@ -203,7 +219,15 @@ class LoginViewController: UIViewController {
         vc.title = "Create Account"
         present(UINavigationController(rootViewController: vc), animated: true)
     }
+    
+    @objc private func didTapRecoveryPasswordButton(){
+        let vc = PasswordRecoverViewController()
+        vc.modalPresentationStyle = .fullScreen // user can't swipe it away
+        self.present(vc, animated: true, completion: nil)
+    }
 }
+
+
 
 extension LoginViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

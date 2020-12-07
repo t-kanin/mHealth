@@ -10,6 +10,8 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var headerLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -17,16 +19,8 @@ class HomeViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool){
         super.viewDidAppear(animated)
+        setupHeaderLabel()
         handleNotAuthenticated()
-        
-        /*force sign out*/
-        do{
-            try Auth.auth().signOut()
-        }
-        catch{
-            print("failed to sign out")
-        }
-        
     }
     
     private func  handleNotAuthenticated(){
@@ -39,5 +33,13 @@ class HomeViewController: UIViewController {
             self.present(loginVC, animated: true, completion: nil)
         }
     }
+    
+    func setupHeaderLabel (){
+        let title = "Home"
+        let attributedText = NSMutableAttributedString(string: title,attributes:
+                            [NSAttributedString.Key.font: UIFont.init(name:"Didot",size: 28)!,NSAttributedString.Key.foregroundColor: UIColor.black])
+        headerLabel.attributedText = attributedText
+    }
+    
 }
 
