@@ -4,6 +4,8 @@
 <dict>
     <key>NSMotionUsageDescription</key>
     <string>The app use this to track the user activity</string>
+    <key>NSHealthShareUsageDedscription</key>
+    <string>The app use this to get the user health info</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>

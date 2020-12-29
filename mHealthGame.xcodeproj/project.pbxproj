@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B053ED6259AC5FE00C9F4A9 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B053ED5259AC5FE00C9F4A9 /* HealthManager.swift */; };
+		8B33B1DF257EE72100475C01 /* HomeViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B33B1DE257EE72100475C01 /* HomeViewExtension.swift */; };
 		8B51CC9A25795F8800A61078 /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B51CC9925795F8800A61078 /* ProgressViewController.swift */; };
 		8B51CCA1257AA7F900A61078 /* SettingViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B51CCA0257AA7F900A61078 /* SettingViewExtension.swift */; };
 		8B51CCA8257AC41700A61078 /* LoginViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B51CCA7257AC41700A61078 /* LoginViewExtension.swift */; };
@@ -34,6 +36,8 @@
 /* Begin PBXFileReference section */
 		1DBDF773429D0FB701298499 /* Pods_mHealthGame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mHealthGame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		222989B0A8AC712A2E7F3C87 /* Pods-mHealthGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mHealthGame.debug.xcconfig"; path = "Target Support Files/Pods-mHealthGame/Pods-mHealthGame.debug.xcconfig"; sourceTree = "<group>"; };
+		8B053ED5259AC5FE00C9F4A9 /* HealthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthManager.swift; sourceTree = "<group>"; };
+		8B33B1DE257EE72100475C01 /* HomeViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewExtension.swift; sourceTree = "<group>"; };
 		8B51CC9925795F8800A61078 /* ProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
 		8B51CCA0257AA7F900A61078 /* SettingViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewExtension.swift; sourceTree = "<group>"; };
 		8B51CCA7257AC41700A61078 /* LoginViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewExtension.swift; sourceTree = "<group>"; };
@@ -87,6 +91,7 @@
 				8B51CCA0257AA7F900A61078 /* SettingViewExtension.swift */,
 				8B51CCA7257AC41700A61078 /* LoginViewExtension.swift */,
 				8BC96802257C35500017E4E8 /* PasswordRecoveredExtension.swift */,
+				8B33B1DE257EE72100475C01 /* HomeViewExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -145,6 +150,7 @@
 				8BB6949C256831420057B175 /* AuthManager.swift */,
 				8BB694992568307E0057B175 /* DatabaseManager.swift */,
 				8BB6949F256831660057B175 /* StorageManager.swift */,
+				8B053ED5259AC5FE00C9F4A9 /* HealthManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -332,6 +338,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B33B1DF257EE72100475C01 /* HomeViewExtension.swift in Sources */,
+				8B053ED6259AC5FE00C9F4A9 /* HealthManager.swift in Sources */,
 				8BB694B7256C3C1F0057B175 /* Extension.swift in Sources */,
 				8B66F5932561DB4A00067D7F /* LoginViewController.swift in Sources */,
 				8B51CCA1257AA7F900A61078 /* SettingViewExtension.swift in Sources */,

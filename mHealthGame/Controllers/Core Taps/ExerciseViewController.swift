@@ -7,6 +7,7 @@
 
 import UIKit
 import CoreMotion
+import HealthKit
 
 class ExerciseViewController: UIViewController{
     
@@ -15,6 +16,8 @@ class ExerciseViewController: UIViewController{
     @IBOutlet weak var zAccel: UITextField!
     @IBOutlet weak var headerLabel: UILabel!
     @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var numberStairClimbTextField: UITextField!
+    
     
     var motion = CMMotionManager()
     var motionActivityManager  = CMMotionActivityManager()
@@ -26,6 +29,9 @@ class ExerciseViewController: UIViewController{
         myAccel()
     }
     
+    // TODO: - move these func to the models
+    
+    // MARK: - GET USER ACTIVITY
     func activityManager(){
         if(CMMotionActivityManager.isActivityAvailable()){ //check if the device authorisation for the motion tracking
             motionActivityManager.startActivityUpdates(to: OperationQueue.main) { (motion) in
@@ -47,6 +53,7 @@ class ExerciseViewController: UIViewController{
         }
     }
     
+    // MARK: - GET ACCELEROMETER DATA FROM THE USER
     func myAccel() {
         motion.accelerometerUpdateInterval = 0.5
         motion.startAccelerometerUpdates(to: OperationQueue.current!) { (data, error) in

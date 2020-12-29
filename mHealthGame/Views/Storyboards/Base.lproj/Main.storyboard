@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0kj-hn-Phk">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0kj-hn-Phk">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -59,22 +59,85 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="auQ-ZM-Daa">
+                                <rect key="frame" x="30" y="239" width="4" height="18.5"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                </accessibility>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fC8-yr-MZ3">
+                                <rect key="frame" x="30" y="297.5" width="4" height="18.5"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                </accessibility>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NLS-Ij-bHg">
+                                <rect key="frame" x="30" y="356" width="4" height="18.5"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                </accessibility>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Swc-ah-2qD">
+                                <rect key="frame" x="30" y="414.5" width="4" height="18.5"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                </accessibility>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="scG-su-Rez">
+                                <rect key="frame" x="30" y="531.5" width="4" height="18.5"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                </accessibility>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V5S-kN-JO6">
+                                <rect key="frame" x="30" y="473" width="4" height="18.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cHA-fT-CbV"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="fC8-yr-MZ3" firstAttribute="top" secondItem="auQ-ZM-Daa" secondAttribute="bottom" constant="40" id="4Wl-Cj-4um"/>
+                            <constraint firstItem="auQ-ZM-Daa" firstAttribute="leading" secondItem="cHA-fT-CbV" secondAttribute="leading" constant="30" id="6hA-1A-wjO"/>
+                            <constraint firstItem="Swc-ah-2qD" firstAttribute="top" secondItem="NLS-Ij-bHg" secondAttribute="bottom" constant="40" id="8dZ-10-IND"/>
                             <constraint firstItem="xmE-lA-IUU" firstAttribute="top" secondItem="cHA-fT-CbV" secondAttribute="top" constant="30" id="DVN-Yv-aAN"/>
+                            <constraint firstItem="NLS-Ij-bHg" firstAttribute="top" secondItem="fC8-yr-MZ3" secondAttribute="bottom" constant="40" id="HIh-1a-k5M"/>
+                            <constraint firstItem="scG-su-Rez" firstAttribute="top" secondItem="V5S-kN-JO6" secondAttribute="bottom" constant="40" id="HR9-12-DXz"/>
+                            <constraint firstItem="Swc-ah-2qD" firstAttribute="leading" secondItem="cHA-fT-CbV" secondAttribute="leading" constant="30" id="K9f-4z-9yh"/>
+                            <constraint firstItem="fC8-yr-MZ3" firstAttribute="leading" secondItem="cHA-fT-CbV" secondAttribute="leading" constant="30" id="XgE-D8-nn8"/>
+                            <constraint firstItem="V5S-kN-JO6" firstAttribute="leading" secondItem="cHA-fT-CbV" secondAttribute="leading" constant="30" id="cJz-wG-Ugh"/>
+                            <constraint firstItem="V5S-kN-JO6" firstAttribute="top" secondItem="Swc-ah-2qD" secondAttribute="bottom" constant="40" id="fa4-nJ-dEl"/>
                             <constraint firstItem="xmE-lA-IUU" firstAttribute="leading" secondItem="cHA-fT-CbV" secondAttribute="leading" constant="30" id="oe2-Y9-69n"/>
+                            <constraint firstItem="NLS-Ij-bHg" firstAttribute="leading" secondItem="cHA-fT-CbV" secondAttribute="leading" constant="30" id="sDV-5P-aJA"/>
+                            <constraint firstItem="scG-su-Rez" firstAttribute="leading" secondItem="cHA-fT-CbV" secondAttribute="leading" constant="30" id="vzj-WA-dmK"/>
+                            <constraint firstItem="auQ-ZM-Daa" firstAttribute="top" secondItem="xmE-lA-IUU" secondAttribute="bottom" constant="100" id="xSN-iL-9EF"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="rFe-Sn-EhB"/>
                     <connections>
+                        <outlet property="dailyMissionTextField" destination="auQ-ZM-Daa" id="zn5-of-xHx"/>
                         <outlet property="headerLabel" destination="xmE-lA-IUU" id="p28-JE-n3z"/>
+                        <outlet property="mission_1" destination="fC8-yr-MZ3" id="nkU-9U-pjS"/>
+                        <outlet property="mission_2" destination="NLS-Ij-bHg" id="RCk-Ub-1Lm"/>
+                        <outlet property="mission_3" destination="Swc-ah-2qD" id="Lr3-gz-SAb"/>
+                        <outlet property="mission_4" destination="V5S-kN-JO6" id="W32-7Y-8IG"/>
+                        <outlet property="mission_5" destination="scG-su-Rez" id="Omf-6d-dWf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9SP-Y4-PcP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-862" y="1487"/>
+            <point key="canvasLocation" x="-862.31884057971024" y="1486.6071428571429"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9uw-Aa-QoE">
@@ -142,11 +205,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TW2-5n-64p">
-                                <rect key="frame" x="30" y="184" width="364" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TW2-5n-64p">
+                                <rect key="frame" x="30" y="178.5" width="32" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jok-3u-44B">
+                                <rect key="frame" x="30" y="252.5" width="32" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7im-Xg-yqQ"/>
@@ -155,12 +222,17 @@
                             <constraint firstItem="bov-5V-a3d" firstAttribute="centerX" secondItem="obf-C4-ydD" secondAttribute="centerX" id="551-6P-ggM"/>
                             <constraint firstItem="bov-5V-a3d" firstAttribute="centerY" secondItem="obf-C4-ydD" secondAttribute="centerY" id="U16-Z4-GQ5"/>
                             <constraint firstItem="Bbd-Ww-Oro" firstAttribute="leading" secondItem="7im-Xg-yqQ" secondAttribute="leading" constant="30" id="UC7-Dg-rOU"/>
+                            <constraint firstItem="TW2-5n-64p" firstAttribute="leading" secondItem="7im-Xg-yqQ" secondAttribute="leading" constant="30" id="XY0-QE-I4Y"/>
                             <constraint firstItem="Bbd-Ww-Oro" firstAttribute="top" secondItem="7im-Xg-yqQ" secondAttribute="top" constant="30" id="iBJ-xB-lWJ"/>
+                            <constraint firstItem="Jok-3u-44B" firstAttribute="top" secondItem="TW2-5n-64p" secondAttribute="bottom" constant="40" id="rVC-3Y-tIq"/>
+                            <constraint firstItem="TW2-5n-64p" firstAttribute="top" secondItem="Bbd-Ww-Oro" secondAttribute="bottom" constant="40" id="yox-06-Wck"/>
+                            <constraint firstItem="Jok-3u-44B" firstAttribute="leading" secondItem="7im-Xg-yqQ" secondAttribute="leading" constant="30" id="zOK-fG-FKR"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="k55-TS-PCM"/>
                     <connections>
                         <outlet property="headerLabel" destination="Bbd-Ww-Oro" id="M58-Vk-j91"/>
+                        <outlet property="numberStairClimbTextField" destination="Jok-3u-44B" id="pEs-Sq-pRW"/>
                         <outlet property="textField" destination="TW2-5n-64p" id="BIV-OI-4mf"/>
                         <outlet property="xAccel" destination="xMh-oi-bmy" id="jGJ-L9-Vj6"/>
                         <outlet property="yAccel" destination="Tmw-ap-716" id="lzQ-Mq-1Pt"/>
