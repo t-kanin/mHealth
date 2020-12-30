@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8B053ED6259AC5FE00C9F4A9 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B053ED5259AC5FE00C9F4A9 /* HealthManager.swift */; };
+		8B053EDA259BFE7100C9F4A9 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B053ED9259BFE7100C9F4A9 /* HealthKit.framework */; };
 		8B33B1DF257EE72100475C01 /* HomeViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B33B1DE257EE72100475C01 /* HomeViewExtension.swift */; };
 		8B51CC9A25795F8800A61078 /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B51CC9925795F8800A61078 /* ProgressViewController.swift */; };
 		8B51CCA1257AA7F900A61078 /* SettingViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B51CCA0257AA7F900A61078 /* SettingViewExtension.swift */; };
@@ -37,6 +38,8 @@
 		1DBDF773429D0FB701298499 /* Pods_mHealthGame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mHealthGame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		222989B0A8AC712A2E7F3C87 /* Pods-mHealthGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mHealthGame.debug.xcconfig"; path = "Target Support Files/Pods-mHealthGame/Pods-mHealthGame.debug.xcconfig"; sourceTree = "<group>"; };
 		8B053ED5259AC5FE00C9F4A9 /* HealthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthManager.swift; sourceTree = "<group>"; };
+		8B053ED8259BFE7100C9F4A9 /* mHealthGame.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = mHealthGame.entitlements; sourceTree = "<group>"; };
+		8B053ED9259BFE7100C9F4A9 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		8B33B1DE257EE72100475C01 /* HomeViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewExtension.swift; sourceTree = "<group>"; };
 		8B51CC9925795F8800A61078 /* ProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
 		8B51CCA0257AA7F900A61078 /* SettingViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewExtension.swift; sourceTree = "<group>"; };
@@ -70,6 +73,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD0884A7F81EF0F14F848623 /* Pods_mHealthGame.framework in Frameworks */,
+				8B053EDA259BFE7100C9F4A9 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +83,7 @@
 		7A4C2FAACE42BF61EA3788D7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8B053ED9259BFE7100C9F4A9 /* HealthKit.framework */,
 				1DBDF773429D0FB701298499 /* Pods_mHealthGame.framework */,
 			);
 			name = Frameworks;
@@ -117,6 +122,7 @@
 		8B66F5722561D86200067D7F /* mHealthGame */ = {
 			isa = PBXGroup;
 			children = (
+				8B053ED8259BFE7100C9F4A9 /* mHealthGame.entitlements */,
 				8B66F58C2561D8CE00067D7F /* Resources */,
 				8B66F58B2561D8C500067D7F /* Models */,
 				8B66F58A2561D8BE00067D7F /* Views */,
@@ -503,6 +509,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = mHealthGame/mHealthGame.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4QUWDSYJ8R;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -525,6 +532,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = mHealthGame/mHealthGame.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4QUWDSYJ8R;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";

@@ -9,7 +9,7 @@ import UIKit
 
 
 class HomeViewController: UIViewController {
-
+    
     @IBOutlet weak var dailyMissionTextField: UITextField!
     @IBOutlet weak var mission_1: UITextField!
     @IBOutlet weak var mission_2: UITextField!

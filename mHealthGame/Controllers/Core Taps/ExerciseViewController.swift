@@ -19,14 +19,46 @@ class ExerciseViewController: UIViewController{
     @IBOutlet weak var numberStairClimbTextField: UITextField!
     
     
-    var motion = CMMotionManager()
-    var motionActivityManager  = CMMotionActivityManager()
+    private var motion = CMMotionManager()
+    private var motionActivityManager  = CMMotionActivityManager()
+    private var healthManager = HealthManager()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupHeaderLabel()
         activityManager()
         myAccel()
+        
+        healthManager.requestAuthorization { success in
+            if success {
+                self.healthManager.getTodayFlightsClimb { result in
+                    if let myresult = result {
+                        // update UI
+                        self.updateFlightClimbUI(collection: myresult)
+                    }
+                }
+            }
+            else {
+                print("Auth not success")
+            }
+        }
+    }
+    
+    private func updateFlightClimbUI( collection: HKStatisticsCollection){
+        let startDate = Calendar.current.startOfDay(for: Date())
+        var cc = Double(0)
+        collection.enumerateStatistics(from: startDate, to: Date()) { (statistics, value) in
+            let count = statistics.sumQuantity()?.doubleValue(for: .count())
+            if count != nil {
+                cc = count!
+            }
+            print("FlightClimbs: \(count)")
+            DispatchQueue.main.async {
+                self.numberStairClimbTextField.text = "FlightClimbs: \(cc)"
+            }
+            
+        }
     }
     
     // TODO: - move these func to the models
@@ -47,7 +79,7 @@ class ExerciseViewController: UIViewController{
                 else{
                     self.textField.text = "User activity is unknown"
                 }
-                print(motion as Any)
+                //print(motion as Any)
                 
             }
         }
