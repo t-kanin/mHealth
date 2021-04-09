@@ -235,7 +235,9 @@ extension LoginViewController: UITextFieldDelegate {
             password.becomeFirstResponder() // keyboard pop-up
         }
         else if textField == password {
-            usernameEmail.becomeFirstResponder()
+            view.endEditing(true)
+            password.resignFirstResponder()
+           // usernameEmail.becomeFirstResponder()
         }
         return true
     }

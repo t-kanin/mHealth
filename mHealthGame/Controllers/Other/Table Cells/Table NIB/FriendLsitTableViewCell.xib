@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FriendLsitTableViewCell" rowHeight="85" id="KGk-i7-Jjw" customClass="FriendLsitTableViewCell" customModule="mHealthGame" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="357" height="85"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="357" height="85"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FnQ-9t-Ajf">
+                        <rect key="frame" x="10" y="10" width="50" height="65"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="Ycd-yN-sdd"/>
+                            <constraint firstAttribute="height" constant="50" id="rHg-li-yNm"/>
+                        </constraints>
+                    </imageView>
+                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ifT-6B-ke6">
+                        <rect key="frame" x="110" y="22.5" width="227" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="150" id="mk5-tI-aXq"/>
+                            <constraint firstAttribute="height" constant="40" id="xBL-YR-JIq"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="FnQ-9t-Ajf" secondAttribute="bottom" priority="999" constant="10" id="2jG-uS-D8P"/>
+                    <constraint firstItem="FnQ-9t-Ajf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" priority="999" constant="10" id="4Ri-ry-8PI"/>
+                    <constraint firstAttribute="trailing" secondItem="ifT-6B-ke6" secondAttribute="trailing" priority="999" constant="20" id="YOD-yi-GRv"/>
+                    <constraint firstItem="ifT-6B-ke6" firstAttribute="leading" secondItem="FnQ-9t-Ajf" secondAttribute="trailing" priority="999" constant="100" id="ZCw-r2-CPk"/>
+                    <constraint firstItem="ifT-6B-ke6" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="dG5-8t-Hc9"/>
+                    <constraint firstItem="FnQ-9t-Ajf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" priority="999" constant="10" id="rOp-ON-dfp"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="nameTextField" destination="ifT-6B-ke6" id="dyB-qw-Phj"/>
+                <outlet property="photoImg" destination="FnQ-9t-Ajf" id="sdm-ce-oL4"/>
+            </connections>
+            <point key="canvasLocation" x="163.04347826086959" y="88.727678571428569"/>
+        </tableViewCell>
+    </objects>
+</document>

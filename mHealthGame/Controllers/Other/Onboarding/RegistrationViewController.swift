@@ -119,14 +119,14 @@ class RegistrationViewController: UIViewController {
             registered in
             DispatchQueue.main.async {
                 if registered {
-                    /*
-                    let vc = HomeViewController()
-                    vc.modalPresentationStyle = .fullScreen // user can't swipe it away
-                    self.present(vc, animated: true, completion: nil)
-                     */
+                    let alert = UIAlertController(title: "Success", message: "Register Successfully", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+                    self.present(alert, animated: true)
                 }
                 else {
-                    //failed
+                    let alert = UIAlertController(title: "failure", message: "Register Unsuccessfully", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+                    self.present(alert, animated: true)
                 }
             }
         }

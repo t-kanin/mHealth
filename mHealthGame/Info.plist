@@ -2,10 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-    <key>NSMotionUsageDescription</key>
-    <string>The app requires to track the user activity</string>
-    <key>NSHealthShareUsageDescription</key>
-    <string>The app requires to access your health data</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
@@ -24,6 +20,28 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCalendarsUsageDescription</key>
+	<string>The app requires to know your calendar event</string>
+	<key>NSContactsUsageDescription</key>
+	<string>The app wants to know your contact</string>
+	<key>NSHealthShareUsageDescription</key>
+	<string>The app requires to access your health data</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>We use location to track thge movement</string>
+	<key>NSMotionUsageDescription</key>
+	<string>The app requires to track the user activity</string>
+	<key>NSRemindersUsageDescription</key>
+	<string>The app requires to your reminders</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>MavenPro-VariableFont_wght.ttf</string>
+		<string>MavenPro-Black.ttf</string>
+		<string>MavenPro-Bold.ttf</string>
+		<string>MavenPro-ExtraBold.ttf</string>
+		<string>MavenPro-Medium.ttf</string>
+		<string>MavenPro-Regular.ttf</string>
+		<string>MavenPro-SemiBold.ttf</string>
+	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

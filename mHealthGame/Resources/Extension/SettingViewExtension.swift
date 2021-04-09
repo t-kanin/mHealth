@@ -12,8 +12,17 @@ extension SettingViewController {
     func setupTitleLabel (){
         let title = "Setting"
         let attributedText = NSMutableAttributedString(string: title,attributes:
-                            [NSAttributedString.Key.font: UIFont.init(name:"Didot",size: 28)!,NSAttributedString.Key.foregroundColor: UIColor.black])
+                            [NSAttributedString.Key.font: UIFont.init(name:"MavenPro-SemiBold",size: 28)!,NSAttributedString.Key.foregroundColor: UIColor.black])
         titleLabel.attributedText = attributedText
+    }
+    
+    func setupUsernameLabel(){
+        DatabaseManager.shared.getUsername{ name in
+            let user = name
+            let attributedText = NSMutableAttributedString(string: user,attributes:
+                                [NSAttributedString.Key.font: UIFont.init(name:"MavenPro-Regular",size: 15)!,NSAttributedString.Key.foregroundColor: UIColor.black])
+            self.username.attributedText = attributedText
+        }
     }
     
     func setupProfilePic (){

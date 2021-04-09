@@ -22,7 +22,6 @@ public class StorageManager {
         metadata.contentType = "image/jpg"
         storageRef.putData(imageData, metadata: metadata) { ( StorageMetadata, error) in
             if error != nil {
-                print(error?.localizedDescription)
                 return
             }
             

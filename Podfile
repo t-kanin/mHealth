@@ -15,5 +15,6 @@ target 'mHealthGame' do
 
   pod 'SDWebImage'
 
+  pod 'Charts'
 
 end
